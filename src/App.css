@@ -2,6 +2,39 @@
   text-align: center;
 }
 
+/* Add styles for the blob loader */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #f0f0f0; /* Light gray background */
+  margin: 0;
+}
+
+.blob-loader {
+  width: 100vw;
+  height: 100vh;
+  background: #3498db;
+  border-radius: 50%;
+  animation: blob-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes blob-animation {
+  0% {
+    transform: scale(1);
+    background: #3498db;
+  }
+  50% {
+    transform: scale(1.5);
+    background: #2ecc71;
+  }
+  100% {
+    transform: scale(1);
+    background: #3498db;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +44,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+input {
+  box-shadow: none;
 }
 
 .App-header {
@@ -24,6 +61,25 @@
   color: white;
 }
 
+.subHeading {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+}
+.subHeading-1 {
+  font-size: 0.8rem;
+  font-weight: 800;
+  /* color: rgb(23, 23, 23); */
+  color: #38333f;
+  font-family: "Nunito", sans-serif;
+}
+
+.pModified {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #38333f;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +91,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cardList {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: auto;
+}
+
+.cardList::-webkit-scrollbar {
+  height: 0.5vw;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 0.8vw; /* adjust as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* or any color you prefer */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* or any color you prefer */
+  border-radius: 1rem;
 }

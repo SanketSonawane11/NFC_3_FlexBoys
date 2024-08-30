@@ -1,0 +1,47 @@
+
+
+.wrapper{
+    display: flex;
+    background-color: #172337;
+     width: 100vw;
+    height: 12rem;
+    align-items: center;
+    
+    
+}
+.footer{
+    display: flex;
+    height: max-content;
+    
+}
+
+.fH{
+    color: #fff; 
+    font-weight: 700; 
+  }
+  .fP{
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 400;
+  }
+
+  .leftFoot{
+    display: flex;
+    justify-content: space-around;
+    flex: 20%;
+  }
+  .midFoot{
+    display: flex;
+    justify-content: space-around;
+    flex: 20%;
+  }
+  .box{
+    width: 40%;
+  }
+  .rightFoot{
+    display: flex; 
+    flex: 60%;
+    justify-content: space-around;
+    margin-right: .5rem;
+  }
+  

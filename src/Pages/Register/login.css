@@ -1,0 +1,61 @@
+.loginUi{
+    background: url("../../../public/images/login.png");
+}
+
+/* *{
+   
+} */
+.loginCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.loginDiv{
+    width: 35rem;
+    height: 30rem;
+    margin:auto;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    /* gap: 1rem; */
+}
+
+.tiny{
+    font-size: .6rem;
+    color: red;
+    position: relative;
+    bottom: 1rem;
+    right: 0;
+}
+
+.input{
+    display: flex;
+    width: 20rem;
+    height: 3rem;
+    background:#fff;
+    border: 1px solid gray;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+
+}
+
+input{
+    outline: none;
+    width: 80%;
+    background: none;
+}
+
+.previewWrapper{
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+}

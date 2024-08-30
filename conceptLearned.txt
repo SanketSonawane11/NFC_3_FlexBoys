@@ -1,0 +1,17 @@
+1.sending email to my email id using (formspree)
+
+2.error{
+$ npm start
+
+> frontend@0.1.0 start
+> react-scripts start
+
+'react-scripts' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+=> npm install react-scripts
+}
+
+
+// jese Backend me hotaha req.params.id sam frontend me hota ha match.params.id
